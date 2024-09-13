@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bouncingminecarts",
+  "version": "${version}",
+  "name": "BouncingMinecarts",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "codes.domino.bouncingminecarts.client.BouncingMinecartsClient"
+    ],
+    "main": [
+      "codes.domino.bouncingminecarts.BouncingMinecarts"
+    ]
+  },
+  "mixins": [
+    "bouncingminecarts.mixins.json",
+    {
+      "config": "bouncingminecarts.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "codes.domino.bouncingminecarts.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MinecartMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
